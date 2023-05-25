@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estructura.css">
+    <link rel="stylesheet" href="/css/administrador.css">
+    <title>Administrador</title>  
+    
+    
+</head>
+<body>
+    <center><div id="cuerpo">
+        <div id="cabecera">
+            <div id="imgCabecera">
+                <img src="/img/Carroinicio.jfif" alt="Foto_Empanada">
+            </div>
+            <div id="subCabecera">
+                <div id="subCabecera1"></div>
+                <div id="subCabecera2"></div>
+                <h1>Autos Usados "La plebada"</h1>
+            </div>
+        </div>
+
+        <div id="barraNavegacion">
+            <div class="vinculo"><a href="/html/productos.html">Productos</a></div>
+            <div id="btnLimpiar" class="vinculo"><a href="#">Limpiar</a></div>
+            <!-- <div id="btnCerrar" class="vinculo"><a href="#">Desconectar</a></div>-->
+        </div>
+
+        <div id="contenido">
+            <div id="seccionBusqueda" class="seccion seccionLarga">
+                <label for="" class="componenteBusqueda"></label>
+                <input type="text" name="txtBusqueda" id="txtBusqueda" maxlength="10" class="txtCaptura componenteBusqueda">
+                <button id="btnBusqueda">Buscar</button>
+            </div>
+
+            <div class="seccion">
+                <img id="imgProducto" src="/img/Esperando.png" alt="Imagen producto" id="imgProducto">
+                <button id="btnProducto">Guardar</button>
+            </div>
+
+            <div class="seccion">
+                <label for="lblNombre">Sub-Marca</label>
+                <input type="text" id="txtNombre" name="txtNombre" class="txtCaptura" maxlength="10" required>
+
+                <br>
+
+                <label for="lblDescripcion">Descripcion</label>
+                <textarea name="txtDescripcion" id="txtDescripcion" cols="20" rows="3" class="txtCaptura" maxlength="130" required></textarea>
+
+                <br>
+
+                <label for="lblPrecio">Precio</label>
+                <input type="number" id="txtPrecio" name="txtPrecio" class="txtCaptura" required>
+
+                <br>
+
+                <label for="">Imagen</label>
+                <div id="divFile" class="txtCaptura">
+                    <input type="file" id="txtImagen" name="txtImagen" class="txtCaptura" accept=".jpg, .jpeg, .png, .jfif, .webp" required>
+                    <label id="lblImagen" for="">Cargar Imagen</label>
+                </div>
+                
+                <br>
+
+                <label id="lblActivado" for="" style="display: none;">Activado</label>
+                <input type="checkbox" name="cbxActivado" id="cbxActivado" style="display: none;">
+            </div>
+        </div>
+        
+        <div id="pie"><h3>@Diego Celaya Alvarez - Todos los derechos reservados</h3></div>
+    </div></center>
+</body>
+<script src="/js/administrador.js" type="module"></script>
+</html>

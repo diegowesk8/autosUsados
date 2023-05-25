@@ -73,7 +73,24 @@
                   <li class="nav-item mb-2"><a href="/html/nosotros.html" class="nav-link p-0 text-muted">Nosotros</a></li>
                   <li class="nav-item mb-2"><a href="/html/productos.html" class="nav-link p-0 text-muted">Productos</a></li>
                   <li class="nav-item mb-2"><a href="/html/contactos.html" class="nav-link p-0 text-muted">Contactos</a></li>
+                  
                 </ul>
+                <button id="adminBtn">Admin</button>
+
+<!-- Define el cuadro de diálogo (modal) oculto -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Ingresa tu correo y contraseña</h2>
+    <form id="loginForm">
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" required><br><br>
+      <label for="password">Contraseña:</label><br>
+      <input type="password" id="password" required><br><br>
+      <input type="submit" value="Ingresar">
+    </form>
+  </div>
+</div>
 
                
               </div>
@@ -85,4 +102,5 @@
         </footer>
     
 </body>
+<script src="/js/ingresar.js" type="module"></script>
 </html>

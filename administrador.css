@@ -1,0 +1,93 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.seccion {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  padding: 10px;
+}
+
+.seccionLarga {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+#imgProducto {
+  width: 300px;
+  height: 300px;
+  background-color: #cefeb4;
+  border-radius: 10px 10px 0 0;
+}
+
+#btnProducto {
+  width: 300px;
+  height: 40px;
+  background-color: #304244;
+  color: white;
+  border: 0;
+  border-radius: 0 0 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.txtCaptura {
+  width: 300px;
+  background-color: #d8e4e6;
+  border: 0;
+  border-left: solid #d8e4e6 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#divImagen {
+  content: "Seleccionar imagen";
+  position: relative;
+  cursor: pointer;
+}
+
+#txtImagen {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+#lblImagen {
+  cursor: pointer;
+}
+
+#txtDescripcion {
+  text-align: left;
+  resize: none;
+}
+
+#seccionBusqueda {
+  margin-bottom: 20px;
+}
+
+.componenteBusqueda {
+  margin-right: 10px;
+}
+
+#btnBusqueda {
+  width: 100px;
+  background-color: #304244;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#txtBusqueda {
+  width: 200px;
+}
